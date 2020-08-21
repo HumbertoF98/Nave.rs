@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap'); 
-
   /*
   Apply on all pages
  */
@@ -32,12 +30,12 @@ body {
 
 
 body, input button {
-  font: 14px 'Montserrat', sans-serif;
-  
+  font: 14px Montserrat;
+  font-weight: 600;
 }
 
 input::placeholder {
-  font: 16px 'Montserrat', sans-serif;
+  font: 16px Montserrat;
   color: #9E9E9E
 }
 
