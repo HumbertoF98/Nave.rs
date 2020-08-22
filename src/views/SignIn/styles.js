@@ -9,6 +9,7 @@ display: flex;
 export const ContainerBorder = styled.div`
 width: 448px;
 height: 408px;
+padding: 30px;
 border: 1px solid #212121;
 box-sizing: border-box;
 justify-content: space-evenly;

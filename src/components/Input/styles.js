@@ -7,7 +7,6 @@ display: flex;
 label{
   text-align: left;
   margin-bottom: 5px;
-  margin-left: 32px;
   color:#212121;
   font-weight: 600;
 }

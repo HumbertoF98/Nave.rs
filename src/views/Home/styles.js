@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
 `;
 
-
 export const SubHeader = styled.div`
 margin: 30px 45px 30px 45px;
 display: flex;
@@ -27,6 +26,7 @@ height: 420px;
 display: flex;
 margin: 45px;
 justify-content: space-between;
+overflow: hidden;
 `;
 
 export const ViewOneNaver = styled.div`
