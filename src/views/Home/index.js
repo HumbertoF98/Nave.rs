@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   SubHeader,
@@ -8,6 +8,8 @@ import {
 } from './styles';
 // components
 import Button from '../../components/Button';
+// modal
+import Modal from '../../components/Modal';
 //images
 import Naver1 from '../../assets/Naver1.svg';
 import Pencil from '../../assets/pencil.svg';
@@ -16,6 +18,8 @@ import Trash from '../../assets/trash.svg';
 import { useHistory } from 'react-router-dom';
 
 export default function Home() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   const history = useHistory();
   return (
     <Container>
@@ -27,7 +31,8 @@ export default function Home() {
       </SubHeader>
       <ViewNavers>
         <ViewOneNaver>
-          <img src={Naver1} alt="ImageNaver" />
+          <img src={Naver1} alt="ImageNaver" onClick={() => setIsModalVisible(true)} />
+          {isModalVisible ? <Modal /> : null}
           <h3>Juliano Reis</h3>
           <h4>Front-end Developer</h4>
           <ViewTrashAndPencil>

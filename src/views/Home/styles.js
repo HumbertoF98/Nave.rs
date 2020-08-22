@@ -36,6 +36,7 @@ flex-direction: column;
 display: flex;
 img{
   height: 66%;
+  cursor: pointer;
   width: 100%;
 }
 h3{
