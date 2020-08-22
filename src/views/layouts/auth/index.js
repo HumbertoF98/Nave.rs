@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Wrapper, Content } from './styles';
 
-
+// non-authenticated user
 export default function AuthLayout({ children }) {
   return (
     <Wrapper>

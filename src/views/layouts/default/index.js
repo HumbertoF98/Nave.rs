@@ -5,7 +5,7 @@ import Header from '../../../components/Header';
 
 import { Wrapper } from './styles';
 
-
+// user authenticated
 export default function DefaultLayout({ children }) {
   return (
     <Wrapper>
