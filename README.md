@@ -1,68 +1,118 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🗺 Desafio Nave.rs
 
-## Available Scripts
+<h1 align="center">
+    <img alt="Comarca" src="assets/logo.png" height="100px" />
+    <br/>
+   <a href="https://preview.adonisjs.com/guides/quick-start" target="_blank" rel="noopener">AdonisJs</a> | <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
+</h1>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Develop by" src="https://img.shields.io/badge/Develop%20&%20Made%20by-DomPixel-blue?style=flat&logo=Awesome-Lists">
+  <img alt="GitHub last commit" src="https://img.shields.io/badge/Made%20with-TypeScript-1f425f.svg?logo=typescript">
+   <img alt="Made By" src="https://img.shields.io/badge/Licença-DomPixel%20v1.0.0-blue?style=flat&logo=Google-Sheets">
+<p>
 
-### `yarn start`
+<h3 align="center">
+  <a href="#-sobre">Sobre o projeto</a>
+  <span> · </span>
+  <a href="#-tecnologias-utilizadas">Tecnologias utilizadas</a>
+  <span> · </span>
+  <a href="#-primeiros-passos">Primeiros passos</a>
+    <span> · </span>
+  <a href="#-material-de-apoio">Materiais de apoio</a>
+  <span> · </span>
+  <a href="#-padroes-contribuir">Padrões do projeto</a>
+  <span> · </span>
+  <a href="#-to-do-&-prazos">To Do & Prazos</a>
+  <span> · </span>
+  <a href="#-licença">Licença</a>
+</h3>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💭 Sobre
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+O projeto "Comarca", é uma solução para um problema que afeta a classe de advogados,
+mais especificamente em saber o status de andamento dos processos e também se existe algum problema ou não na comarca em que o processo está tramitando.
 
-### `yarn test`
+## 👨‍💻 Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> no frontend web;
+- <a href="https://preview.adonisjs.com/guides/quick-start" target="_blank" rel="noopener">AdonisJS</a> no backend;
+- <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> para tipagem do projeto como um todo.
 
-### `yarn build`
+## ⁉ Primeiros passos
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🤔 Pré-requisitos
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Para conseguir utilizar o projeto e contribuir nele, basta seguir as instruções abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- O **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>** é **OBRIGATÓRIO** para executar esse projeto e é **RECOMENDADO** usar a versão LTS.
+- O **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** ou **<a href="https://yarnpkg.com/" target="_blank" rel="noopener">Yarn</a>** são **OBRIGATÓRIO** para o gerenciamento dos pacotes da aplicação.
+- O **<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>** é **OBRIGATÓRIO** para o controle de versão do projeto.
 
-### `yarn eject`
+### 📝 Passo a passo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Primeiro clone o repositório em seu computador, por meio do terminal utilizando o comando:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clonando o repositório
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+  # Clone o repositório
+  $ git clone https://github.com/dom-pixel/comarca.git
+  # Entre na pasta raiz da aplicação
+  $ cd comarca
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Iniciando o Backend
 
-## Learn More
+```sh
+  # Entre na pasta do backend
+  $ cd server
+  # Instale as dependências da aplicação
+  $ yarn # ou npm install
+  # Após criar um banco de dados local e configurar o .env
+  # Execute o comando abaixo para rodar as migrations
+  $ node ace migration:run
+  # Inicie o servidor
+  $ node ace serve --watch
+  # Em caso de dúvida de comandos é possível listar todos com
+  $ node ace --help
+  # Também é possível acessar a documentado do adonis em:
+  # https://preview.adonisjs.com/guides/quick-start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Iniciando o Frontend web
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  # Entre na pasta da aplicação web
+  $ cd web
+  # Instale as dependências da aplicação
+  $ yarn # ou npm install
+  # Inicie a aplicação web
+  $ yarn start # ou npm start
+```
 
-### Code Splitting
+## 📚 Material de apoio
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [Whimsical](https://whimsical.com/CixQTontWwUqpeG1TkdFpM)
 
-### Analyzing the Bundle Size
+## 💯 Padrões do projeto
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Ainda será preenchido
 
-### Making a Progressive Web App
+## ❗ To Do & prazos
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### 🚧 Lista de Atividades
 
-### Advanced Configuration
+To Do
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### ⏰ Prazos
 
-### Deployment
+To Do
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## 📃 Licença
 
-### `yarn build` fails to minify
+Esse projeto está sob a licença DOM v1. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
+
+<sup> Feito com 💙 pelos artesões da web da 👾<a href="https://dompixel.com.br/" target="_blank" rel="noopener">DomPixel</a> ® 2020.</sup>

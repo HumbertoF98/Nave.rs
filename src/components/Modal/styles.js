@@ -6,8 +6,6 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-bottom: 0;
-right: 0;
 z-index: 10;
 background:rgba(0, 0, 0, 0.5);
 display: flex;
@@ -46,10 +44,12 @@ img{
 export const Content = styled.div`
 display: flex;
 height: 100%;
+width: 100%;
 flex-direction: column;
 padding: 20px;
 @media(max-width:768px){
   padding: 5px;
+  justify-content: space-between;
 }
 `;
 
@@ -58,6 +58,10 @@ export const DivInfo = styled.div`
   height: 90%;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 30px;
+  @media(max-width: 768px){
+    margin-top: 5px;
+  }
   h1{
   font-size: 24px;
   line-height: 36px;
@@ -65,6 +69,9 @@ export const DivInfo = styled.div`
   @media(max-width:1100px){
     font-size: 16px;
     line-height: 24px;
+  }
+  @media(max-width:768px){
+    font-size: 12px;
   }
 }
 span{
@@ -76,11 +83,11 @@ span{
   @media(max-width:1100px){
     font-size: 12px;
     line-height: 12px;
+    margin-top: 5px;
   }
   @media(max-width:768px){
-    font-size: 12px;
-    line-height: 12px;
-    margin-top: 2px;
+    font-size: 8px;
+    line-height: 8px;
   }
 }
 h2{
@@ -101,17 +108,16 @@ h2{
 export const DivIcons = styled.div`
 flex-direction: row;
 justify-content: space-between;
-width: 25%;
-align-self: flex-start;
+width: 10%;
 height: 10%;
 display:flex;
+margin-top: 30px;
 @media(max-width:1100px){
   margin-top: 20px;
-  width: 30%;
 }
 @media(max-width:768px){
-  margin-top: 5px;
-  width: 30%;
+  width: 20%;
+  margin-top: -30px;
 }
 img{
   width: 14px;
@@ -121,6 +127,23 @@ img{
 
 export const CloseButton = styled.div`
 width: 14px;
+height: 14px;
+display: flex;
+cursor: pointer;
+align-self: flex-end;
+position: absolute;
+@media(max-width:768px){
+  img{
+   width: 8px;
+  height: 8px;
+  margin-top: 5px;  
+  }
+ 
+}
+`;
+
+
+/* width: 14px;
 height: 14px;
 margin-top: 20px;
 display: flex;
@@ -132,5 +155,4 @@ margin-left: 175px;
 @media(max-width: 768px){
 margin-left: 20px;
 margin-top: -65px;
-}
-`;
+} */

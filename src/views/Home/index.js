@@ -49,6 +49,11 @@ export default function Home({ children }) {
     setIsModalVisible(true)
   }
 
+  function seeModalDelete(id) {
+    setData(id);
+    setModalDelete(true)
+  }
+
   return (
     <Container>
       <SubHeader>
@@ -65,11 +70,16 @@ export default function Home({ children }) {
               <Modal onClose={() => setIsModalVisible(false)}>
                 {data}
               </Modal> : null}
-            <h3>{nav.name}</h3>
+            <h3>{nav.name.length > 20 ?
+              nav.name.substring(0, 20, -3) + '...'
+              :
+              nav.name}</h3>
             <h4>{nav.job_role}</h4>
             <ViewTrashAndPencil>
-              <img src={Trash} alt="ImageNaver" onClick={() => setModalDelete(true)} />
-              {modalDelete ? <ModalDeleteNaver onClose={() => setModalDelete(false)} /> : null}
+              <img src={Trash} alt="ImageNaver" onClick={() => seeModalDelete(nav.id)} />
+              {modalDelete ? <ModalDeleteNaver onClose={() => setModalDelete(false)}>
+                {data}
+              </ModalDeleteNaver> : null}
               <img src={Pencil} alt="ImageNaver" onClick={() => history.push({
                 pathname: '/adicionar-naver',
                 state: { detail: nav }

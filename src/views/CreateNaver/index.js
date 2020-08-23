@@ -80,7 +80,6 @@ export default function CreateNaver(props) {
     }
   }
 
-
   async function addNaver() {
     setLoading(true);
     if (!name || !age || !job || !adimissionDate || !project || !urlPhoto) {
