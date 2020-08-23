@@ -5,6 +5,9 @@ import SignIn from "../views/SignIn";
 import Home from "../views/Home";
 import CreateNaver from "../views/CreateNaver";
 
+/*
+Navigation routes
+ */
 export default function Routes() {
   return (
     <Switch>

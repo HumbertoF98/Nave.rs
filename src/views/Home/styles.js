@@ -34,6 +34,7 @@ flex-direction: row;
 height: 420px;
 display: flex;
 margin: 45px;
+width: 100%;
 @media(max-width: 768px){
   flex-direction: column;
   align-items: center;

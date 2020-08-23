@@ -6,7 +6,9 @@ export default function Button({ children, loading, ...rest }) {
   return (
     <Container {...rest}>
       {loading ? (
-        "Aguarde..."
+        <Text>
+          Aguarde...
+        </Text>
       ) : (
           <Text>{children}</Text>
         )}

@@ -17,6 +17,10 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
+  /*
+  separate layout between authenticated
+   and unauthenticated user (useful for global header)
+  */
   const Layout = isAuthenticated() ? DefaultLayout : AuthLayout;
 
   // if the user is not authenticated, redirect him to the login screen
