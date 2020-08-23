@@ -6,7 +6,6 @@ import {
   DivButtons,
   CancelButton
 } from './styles';
-import closeButton from '../../assets/close.svg';
 //api
 import api from '../../services/api';
 // toast for user experience
@@ -14,7 +13,6 @@ import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import Button from '../Button';
 import ModalInfo from '../../components/ModalInfo';
-import { useHistory } from 'react-router-dom';
 
 const ModalDeleteNaver = ({ onClose = () => { }, children }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);

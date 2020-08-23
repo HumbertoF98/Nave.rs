@@ -10,7 +10,6 @@ import {
 import Button from '../../components/Button';
 // modal
 import Modal from '../../components/Modal';
-import ModalInfo from '../../components/ModalInfo';
 import ModalDeleteNaver from '../../components/ModalDeleteNaver';
 //images
 import Pencil from '../../assets/pencil.svg';
@@ -22,12 +21,12 @@ import api from '../../services/api';
 
 export default function Home({ children }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isModalInfoVisible, setIsModalInfoVisible] = useState(false);
   const [modalDelete, setModalDelete] = useState(false);
   const [navers, setNavers] = useState([]);
   const [data, setData] = useState('');
   const history = useHistory();
 
+  // load Navers
   useEffect(() => {
     async function loadNavers() {
       try {
@@ -44,11 +43,13 @@ export default function Home({ children }) {
     loadNavers();
   }, []);
 
+  // see modal to view the naver
   function seeModal(nav) {
     setData(nav);
     setIsModalVisible(true)
   }
 
+  // see modal to delete a naver
   function seeModalDelete(id) {
     setData(id);
     setModalDelete(true)

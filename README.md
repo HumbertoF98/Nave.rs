@@ -42,4 +42,12 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
   # Inicie a aplicação web
   $ npm start # ou yarn start (caso tenha instalado)
 ```
+
+## 📚 Dificuldades
+
+Durante a execução da atividade proposta, algumas dificuldades e/ou empecilhos surgiram:
+- No layout previsto, pedia-se a idade de um Naver em sua criação, porém a aplicação back-end esperava a data de nascimento do usuário (birthdate), o mesmo acontecia para o tempo de empresa, o back-end esperava a data de admissão (admission_date). Diante destas dificuldades, na criação de um Naver está sendo pedido a data de nascimento e a data de admissão na empresa. Com essas datas é possível fazer o cálculo da idade do Naver e do tempo em que o mesmo está na empresa utilizando a biblioteca Moment (https://momentjs.com/). 
+
+
+
 ---

@@ -23,7 +23,7 @@ export default function SignIn() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-
+  // function to submit login
   async function handleLogin() {
     setLoading(true);
     if (!email || !password) {
@@ -32,7 +32,7 @@ export default function SignIn() {
     }
     else {
       try {
-        const response = await api.post('/users/login', {
+        await api.post('/users/login', {
           email,
           password,
         }).then(function (response) {

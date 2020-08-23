@@ -6,7 +6,6 @@ import {
   SubHeader,
   DivRow
 } from './styles';
-import { useHistory } from 'react-router-dom';
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import goBack from '../../assets/goBack.svg';
@@ -34,9 +33,8 @@ export default function CreateNaver(props) {
   const [project, setProject] = useState(props.location.state ? props.location.state.detail.project : '');
   const [urlPhoto, setUrlPhoto] = useState(props.location.state ? props.location.state.detail.url : '');
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
-  const [AddEditNaver, setAddEditNaver] = useState(props.location.state ? 'Editar Naver' : 'Adicionar Naver');
+  const AddEditNaver = props.location.state ? 'Editar Naver' : 'Adicionar Naver';
 
   // mask for date
   const maskDate = (value) => {
@@ -58,10 +56,11 @@ export default function CreateNaver(props) {
     setAdmissionDate(maskDate(e.target.value));
   }
 
+  // function to update a naver
   async function updateNaver() {
     setLoading(true);
     try {
-      const response = await api.put(`navers/${props.location.state.detail.id}`, {
+      await api.put(`navers/${props.location.state.detail.id}`, {
         name,
         job_role: job,
         birthdate: age,
@@ -80,6 +79,7 @@ export default function CreateNaver(props) {
     }
   }
 
+  // function to add a naver
   async function addNaver() {
     setLoading(true);
     if (!name || !age || !job || !adimissionDate || !project || !urlPhoto) {
@@ -88,7 +88,7 @@ export default function CreateNaver(props) {
     }
     else {
       try {
-        const response = await api.post('navers', {
+        await api.post('navers', {
           name,
           job_role: job,
           birthdate: age,
