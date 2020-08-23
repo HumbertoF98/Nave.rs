@@ -38,7 +38,7 @@ de encontrar possíveis colaboradores da empresa.
 Para utilizar e/ou visualizar o projeto, basta seguir as instruções abaixo:
 
 - Que você tenha instalado o **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>** 
-- Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** ou **<a href="https://yarnpkg.com/" target="_blank" 
+- Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** ou **<a href="https://yarnpkg.com/" target="_blank"></a>** 
 
 
 ### 📝 Passo a passo
