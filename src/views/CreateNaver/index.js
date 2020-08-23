@@ -98,6 +98,12 @@ export default function CreateNaver(props) {
         }).then(function (response) {
           if (response.status === 200) {
             setIsModalVisible(true);
+            setName('');
+            setAge('');
+            setJob('');
+            setAdmissionDate('');
+            setProject('');
+            setUrlPhoto('');
             setLoading(false);
           }
         })
