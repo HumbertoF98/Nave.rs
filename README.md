@@ -6,12 +6,6 @@
    <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
 </h1>
 
-<p align="center">
-  <img alt="Develop by" src="https://img.shields.io/badge/Develop%20&%20Made%20by-DomPixel-blue?style=flat&logo=Awesome-Lists">
-  <img alt="GitHub last commit" src="https://img.shields.io/badge/Made%20with-TypeScript-1f425f.svg?logo=typescript">
-   <img alt="Made By" src="https://img.shields.io/badge/Licença-DomPixel%20v1.0.0-blue?style=flat&logo=Google-Sheets">
-<p>
-
 <h3 align="center">
   <a href="#-sobre">Sobre o projeto</a>
   <span> · </span>
@@ -30,14 +24,12 @@
 
 ## 💭 Sobre
 
-O projeto "Comarca", é uma solução para um problema que afeta a classe de advogados,
-mais especificamente em saber o status de andamento dos processos e também se existe algum problema ou não na comarca em que o processo está tramitando.
+O projeto "Nave.rs", é um desafio formulado pela equipe da Nave.rs com o intuito
+de encontrar possíveis colaboradores da empresa.
 
 ## 👨‍💻 Tecnologias Utilizadas
 
-- <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a> no frontend web;
-- <a href="https://preview.adonisjs.com/guides/quick-start" target="_blank" rel="noopener">AdonisJS</a> no backend;
-- <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> para tipagem do projeto como um todo.
+- <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>
 
 ## ⁉ Primeiros passos
 
