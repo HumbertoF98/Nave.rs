@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Container,
@@ -11,6 +11,8 @@ import Button from "../../components/Button";
 import goBack from '../../assets/goBack.svg';
 
 export default function CreateNaver() {
+  const [AddEditNaver, setAddEditNaver] = useState('Adicionar Naver');
+
   return (
     <Container>
       <Form>
@@ -18,7 +20,7 @@ export default function CreateNaver() {
           <Link to='/inicio'>
             <img src={goBack} alt="imageGoBack" />
           </Link>
-          <h2>Adicionar Naver</h2>
+          <h2>{AddEditNaver}</h2>
         </SubHeader>
         <DivRow>
           <Input
