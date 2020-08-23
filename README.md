@@ -6,16 +6,16 @@
    <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
 </h1>
 
-## 💭 Sobre
+## Sobre o projeto
 
 O projeto "Nave.rs", é um desafio formulado pela equipe da Nave.rs com o intuito
 de encontrar possíveis colaboradores da empresa.
 
-## 👨‍💻 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - <a href="https://reactjs.org/" target="_blank" rel="noopener">ReactJs</a>
 
-### Pré-requisitos
+### Visualização/Utilização
 
 Para utilizar e/ou visualizar o projeto, basta seguir as instruções abaixo:
 
@@ -23,7 +23,7 @@ Para utilizar e/ou visualizar o projeto, basta seguir as instruções abaixo:
 - Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** 
 
 
-### 📝 Passo a passo
+### Passos para utilizar
 
 Primeiro clone o repositório em seu computador, por meio do terminal utilizando o comando:
 
