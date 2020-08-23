@@ -50,7 +50,7 @@ margin: 15px;
 display: flex;
 img{
   cursor: pointer;
-  width: 100%;
+  width: 280px;
   margin-left: 8px;
 }
 h3{

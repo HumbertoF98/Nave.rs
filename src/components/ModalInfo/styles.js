@@ -53,6 +53,7 @@ display: flex;
 flex-direction: row;
 img {
   width: 14px;
+  cursor:pointer;
   height: 14px;
   margin-top: 20px;
   margin-left: 20px;

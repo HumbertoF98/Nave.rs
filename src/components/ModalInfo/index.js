@@ -12,8 +12,8 @@ const ModalInfo = ({ onClose = () => { }, children }) => {
     <ModalContainer>
       <RowContainer>
         <DivContainer>
-          <h1>Naver excluído</h1>
-          <span>Naver excluído com sucesso</span>
+          <h1>Naver criado</h1>
+          <span>Naver criado com sucesso!</span>
         </DivContainer>
         <CloseButton onClick={onClose}>
           <img src={closeButton} alt="CloseButton" />
