@@ -10,6 +10,7 @@ import {
 import Button from '../../components/Button';
 // modal
 import Modal from '../../components/Modal';
+import ModalInfo from '../../components/ModalInfo';
 //images
 import Naver1 from '../../assets/Naver1.svg';
 import Pencil from '../../assets/pencil.svg';
@@ -19,6 +20,7 @@ import { useHistory } from 'react-router-dom';
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isModalInfoVisible, setIsModalInfoVisible] = useState(false);
 
   const history = useHistory();
   return (
@@ -32,7 +34,7 @@ export default function Home() {
       <ViewNavers>
         <ViewOneNaver>
           <img src={Naver1} alt="ImageNaver" onClick={() => setIsModalVisible(true)} />
-          {isModalVisible ? <Modal /> : null}
+          {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)} /> : null}
           <h3>Juliano Reis</h3>
           <h4>Front-end Developer</h4>
           <ViewTrashAndPencil>
@@ -41,7 +43,8 @@ export default function Home() {
           </ViewTrashAndPencil>
         </ViewOneNaver>
         <ViewOneNaver>
-          <img src={Naver1} alt="ImageNaver" />
+          <img src={Naver1} alt="ImageNaver" onClick={() => setIsModalInfoVisible(true)} />
+          {isModalInfoVisible ? <ModalInfo onClose={() => setIsModalInfoVisible(false)} /> : null}
           <h3>Juliano Reis</h3>
           <h4>Front-end Developer</h4>
           <ViewTrashAndPencil>

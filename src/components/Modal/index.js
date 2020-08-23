@@ -4,7 +4,8 @@ import {
   DivContainer,
   Content,
   DivInfo,
-  DivIcons
+  DivIcons,
+  CloseButton
 } from './styles';
 // button for close
 import Naver1 from '../../assets/Naver1.svg';
@@ -12,11 +13,11 @@ import closeButton from '../../assets/close.svg';
 import Trash from '../../assets/trash.svg';
 import Pencil from '../../assets/pencil.svg';
 
-const Modal = ({ children }) => {
+const Modal = ({ onClose = () => { } }) => {
   return (
     <ModalContainer>
       <DivContainer>
-        <img src={Naver1} alt="closeButton" />
+        <img src={Naver1} alt="Naver" />
         <Content>
           <DivInfo>
             <h1>Juliano Reis</h1>
@@ -33,6 +34,9 @@ const Modal = ({ children }) => {
             <img src={Pencil} alt="Pencil" />
           </DivIcons>
         </Content>
+        <CloseButton onClick={onClose}>
+          <img src={closeButton} alt="CloseButton" />
+        </CloseButton>
       </DivContainer>
     </ModalContainer>
   );

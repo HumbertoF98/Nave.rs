@@ -17,7 +17,6 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  console.log(isAuthenticated())
   const Layout = isAuthenticated() ? DefaultLayout : AuthLayout;
 
   // if the user is not authenticated, redirect him to the login screen

@@ -18,10 +18,21 @@ display: flex;
 flex-direction: row;
 width: 1006px;
 height: 503px;
-color: #000;
-img {
+@media(max-width: 1100px){
+  width: 700px;
+  height: 303px;
+}
+@media(max-width:768px){
+  width: 500px;
+}
+img{
   width: 504.8px;
   height: 100%;
+  align-self: flex-start;
+  margin-left: -1px;
+  @media(max-width: 1100px){
+  width: 304.8px;
+}
 }
 `;
 
@@ -36,10 +47,15 @@ export const DivInfo = styled.div`
   display: flex;
   height: 90%;
   flex-direction: column;
+  width: 100%;
   h1{
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
+  @media(max-width:1100px){
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 span{
   margin-top: 10px;
@@ -47,24 +63,54 @@ span{
   line-height: 24px;
   font-weight: 400;
   color: #212121;
+  @media(max-width:1100px){
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 h2{
   font-size: 16px;
   margin-top: 20px;
   line-height: 24px;
   font-weight: 600;
+  @media(max-width:1100px){
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 `;
 
 export const DivIcons = styled.div`
 flex-direction: row;
 justify-content: space-between;
-width: 20%;
+width: 25%;
 align-self: flex-start;
 height: 10%;
 display:flex;
+@media(max-width:1100px){
+  margin-top: 20px;
+  width: 30%;
+}
+@media(max-width:768px){
+  width: 30%;
+}
 img{
   width: 14px;
   height: 18px;
+}
+`;
+
+export const CloseButton = styled.div`
+width: 14px;
+height: 14px;
+margin-top: 20px;
+display: flex;
+cursor: pointer;
+margin-left: 235px;
+@media(max-width: 1100px){
+margin-left: 175px;
+}
+@media(max-width: 768px){
+margin-left: -20px;
 }
 `;

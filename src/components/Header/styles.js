@@ -17,12 +17,12 @@ nav {
   img { 
     height: 48px;
     width: 148px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
 }
 a { 
     font-weight: 600;
     color: #000;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 `;
