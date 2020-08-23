@@ -49,28 +49,8 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
   # Clone o repositório
   $ git clone https://github.com/HumbertoF98/Nave.rs.git
   # Entre na pasta raiz da aplicação
-  $ cd comarca
+  $ cd nave.rs
 ```
-
-2. Iniciando o Backend
-
-```sh
-  # Entre na pasta do backend
-  $ cd server
-  # Instale as dependências da aplicação
-  $ yarn # ou npm install
-  # Após criar um banco de dados local e configurar o .env
-  # Execute o comando abaixo para rodar as migrations
-  $ node ace migration:run
-  # Inicie o servidor
-  $ node ace serve --watch
-  # Em caso de dúvida de comandos é possível listar todos com
-  $ node ace --help
-  # Também é possível acessar a documentado do adonis em:
-  # https://preview.adonisjs.com/guides/quick-start
-```
-
-3. Iniciando o Frontend web
 
 ```sh
   # Entre na pasta da aplicação web
@@ -81,28 +61,8 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
   $ yarn start # ou npm start
 ```
 
-## 📚 Material de apoio
+## 📚 Dificuldades
 
-- [Whimsical](https://whimsical.com/CixQTontWwUqpeG1TkdFpM)
 
-## 💯 Padrões do projeto
-
-Ainda será preenchido
-
-## ❗ To Do & prazos
-
-### 🚧 Lista de Atividades
-
-To Do
-
-### ⏰ Prazos
-
-To Do
-
-## 📃 Licença
-
-Esse projeto está sob a licença DOM v1. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ---
-
-<sup> Feito com 💙 pelos artesões da web da 👾<a href="https://dompixel.com.br/" target="_blank" rel="noopener">DomPixel</a> ® 2020.</sup>
