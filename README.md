@@ -6,22 +6,6 @@
    <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
 </h1>
 
-<h3 align="center">
-  <a href="#-sobre">Sobre o projeto</a>
-  <span> · </span>
-  <a href="#-tecnologias-utilizadas">Tecnologias utilizadas</a>
-  <span> · </span>
-  <a href="#-primeiros-passos">Primeiros passos</a>
-    <span> · </span>
-  <a href="#-material-de-apoio">Materiais de apoio</a>
-  <span> · </span>
-  <a href="#-padroes-contribuir">Padrões do projeto</a>
-  <span> · </span>
-  <a href="#-to-do-&-prazos">To Do & Prazos</a>
-  <span> · </span>
-  <a href="#-licença">Licença</a>
-</h3>
-
 ## 💭 Sobre
 
 O projeto "Nave.rs", é um desafio formulado pela equipe da Nave.rs com o intuito
@@ -53,12 +37,10 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
 ```
 
 ```sh
-  # Entre na pasta da aplicação web
-  $ cd web
   # Instale as dependências da aplicação
-  $ yarn # ou npm install
+  $ npm install # ou yarn (caso tenha instalado)
   # Inicie a aplicação web
-  $ yarn start # ou npm start
+  $ npm start # ou yarn start (caso tenha instalado)
 ```
 
 ## 📚 Dificuldades
