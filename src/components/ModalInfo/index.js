@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ModalContainer,
   DivContainer,
@@ -8,12 +8,13 @@ import {
 import closeButton from '../../assets/close.svg';
 
 const ModalInfo = ({ onClose = () => { }, children }) => {
+
   return (
     <ModalContainer>
       <RowContainer>
         <DivContainer>
-          <h1>Naver criado</h1>
-          <span>Naver criado com sucesso!</span>
+          <h1>{children}</h1>
+          <span>{children}</span>
         </DivContainer>
         <CloseButton onClick={onClose}>
           <img src={closeButton} alt="CloseButton" />

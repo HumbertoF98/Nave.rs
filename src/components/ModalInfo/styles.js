@@ -34,16 +34,29 @@ width: 90%;
 display: flex;
 flex-direction: column;
 padding: 40px;
+@media(max-width: 1100px){
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
 h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
+  @media(max-width: 1100px){
+  font-size: 16px;
+  line-height: 24px;
+}
 }
 span {
   margin-top: 20px;
   font-size: 16px;
   line-height: 36px;
   font-weight: 400;
+  @media(max-width: 1100px){
+  font-size: 12px;
+  line-height: 24px;
+}
 }
 `;
 

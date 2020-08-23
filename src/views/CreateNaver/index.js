@@ -17,18 +17,26 @@ import { toast } from "react-toastify";
 //api
 import api from '../../services/api';
 
-export default function CreateNaver() {
+export default function CreateNaver(props) {
+
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [job, setJob] = useState('');
-  const [adimissionDate, setAdmissionDate] = useState('');
-  const [project, setProject] = useState('');
-  const [urlPhoto, setUrlPhoto] = useState('');
+  const [name, setName] = useState(props.location.state ?
+    props.location.state.detail.name : '');
+  const [age, setAge] = useState(props.location.state ?
+    props.location.state.detail.birthdate.slice(0, 10)
+      .split('-').reverse().join('/')
+    : '');
+  const [job, setJob] = useState(props.location.state ? props.location.state.detail.job_role : '');
+  const [adimissionDate, setAdmissionDate] = useState(props.location.state ?
+    props.location.state.detail.admission_date.slice(0, 10)
+      .split('-').reverse().join('/')
+    : '');
+  const [project, setProject] = useState(props.location.state ? props.location.state.detail.project : '');
+  const [urlPhoto, setUrlPhoto] = useState(props.location.state ? props.location.state.detail.url : '');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-  const [AddEditNaver, setAddEditNaver] = useState('Adicionar Naver');
+  const [AddEditNaver, setAddEditNaver] = useState(props.location.state ? 'Editar Naver' : 'Adicionar Naver');
 
   // mask for date
   const maskDate = (value) => {
@@ -48,6 +56,28 @@ export default function CreateNaver() {
 
   function handleAdmissionDate(e) {
     setAdmissionDate(maskDate(e.target.value));
+  }
+
+  async function updateNaver() {
+    setLoading(true);
+    try {
+      const response = await api.put(`navers/${props.location.state.detail.id}`, {
+        name,
+        job_role: job,
+        birthdate: age,
+        admission_date: adimissionDate,
+        project,
+        url: urlPhoto,
+      }).then(function (response) {
+        if (response.status === 200) {
+          setIsModalVisible(true);
+          setLoading(false);
+        }
+      })
+    } catch (err) {
+      toast.error('Desculpe, ocorreu um erro!');
+      setLoading(false);
+    }
   }
 
 
@@ -140,8 +170,18 @@ export default function CreateNaver() {
             placeholder="URL da foto do Naver"
           />
         </DivRow>
-        {isModalVisible ? <ModalInfo onClose={() => setIsModalVisible(false)} /> : null}
-        <Button loading={loading} onClick={addNaver}>Salvar</Button>
+        {isModalVisible ? <ModalInfo onClose={() => setIsModalVisible(false)}>
+          {props.location.state ?
+            "Naver atualizado com sucesso"
+            :
+            "Naver criado com sucesso"
+          }
+        </ModalInfo> : null}
+        {props.location.state ?
+          <Button loading={loading} onClick={updateNaver}>Salvar</Button>
+          :
+          <Button loading={loading} onClick={addNaver}>Salvar</Button>
+        }
       </Form>
     </Container>
   );
