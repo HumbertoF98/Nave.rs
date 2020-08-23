@@ -22,6 +22,9 @@ flex-direction: row;
 @media(max-width:1100px){
   width: 392px;
 }
+@media(max-width:768px){
+  width: 320px;
+}
 img {
   width: 14px;
   height: 14px;
@@ -38,6 +41,12 @@ padding: 40px;
   padding: 10px;
   justify-content: center;
   align-items: center;
+}
+@media(max-width: 768px){
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
 }
 h1 {
   font-size: 24px;

@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const ModalContainer = styled.div`
 width: 100%;
-height: 100vh;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
+bottom: 0;
+right: 0;
 z-index: 10;
 background:rgba(0, 0, 0, 0.5);
 display: flex;
@@ -23,7 +25,8 @@ height: 503px;
   height: 303px;
 }
 @media(max-width:768px){
-  width: 500px;
+  width: 350px;
+  height: 180px;
 }
 img{
   width: 504.8px;
@@ -33,6 +36,10 @@ img{
   @media(max-width: 1100px){
   width: 304.8px;
 }
+@media(max-width:768px){
+  width: 145px;
+  height: 180px;
+}
 }
 `;
 
@@ -41,6 +48,9 @@ display: flex;
 height: 100%;
 flex-direction: column;
 padding: 20px;
+@media(max-width:768px){
+  padding: 5px;
+}
 `;
 
 export const DivInfo = styled.div`
@@ -67,6 +77,11 @@ span{
     font-size: 12px;
     line-height: 12px;
   }
+  @media(max-width:768px){
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 2px;
+  }
 }
 h2{
   font-size: 16px;
@@ -76,6 +91,9 @@ h2{
   @media(max-width:1100px){
     font-size: 12px;
     line-height: 12px;
+  }
+  @media(max-width:768px){
+    margin-top: 10px;
   }
 }
 `;
@@ -92,6 +110,7 @@ display:flex;
   width: 30%;
 }
 @media(max-width:768px){
+  margin-top: 5px;
   width: 30%;
 }
 img{
@@ -111,6 +130,7 @@ margin-left: 235px;
 margin-left: 175px;
 }
 @media(max-width: 768px){
-margin-left: -20px;
+margin-left: 20px;
+margin-top: -65px;
 }
 `;

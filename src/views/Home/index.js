@@ -20,17 +20,18 @@ import { useHistory } from 'react-router-dom';
 // api
 import api from '../../services/api';
 
-export default function Home() {
+export default function Home({ children }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isModalInfoVisible, setIsModalInfoVisible] = useState(false);
   const [modalDelete, setModalDelete] = useState(false);
   const [navers, setNavers] = useState([]);
+  const [data, setData] = useState('');
   const history = useHistory();
 
   useEffect(() => {
     async function loadNavers() {
       try {
-        const response = await api.get('navers')
+        await api.get('navers')
           .then(function (response) {
             if (response.status === 200) {
               setNavers(response.data);
@@ -43,6 +44,11 @@ export default function Home() {
     loadNavers();
   }, []);
 
+  function seeModal(nav) {
+    setData(nav);
+    setIsModalVisible(true)
+  }
+
   return (
     <Container>
       <SubHeader>
@@ -53,9 +59,12 @@ export default function Home() {
       </SubHeader>
       <ViewNavers>
         {navers.map(nav => (
-          <ViewOneNaver>
-            <img src={nav.url} alt="ImageNaver" onClick={() => setIsModalVisible(true)} />
-            {isModalVisible ? <Modal onClose={() => setIsModalVisible(false)} /> : null}
+          <ViewOneNaver key={nav.id}>
+            <img src={nav.url} alt="ImageNaver" onClick={() => seeModal(nav)} />
+            {isModalVisible ?
+              <Modal onClose={() => setIsModalVisible(false)}>
+                {data}
+              </Modal> : null}
             <h3>{nav.name}</h3>
             <h4>{nav.job_role}</h4>
             <ViewTrashAndPencil>

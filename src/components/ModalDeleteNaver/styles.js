@@ -31,6 +31,10 @@ display: flex;
   width: 392px;
   height: 170px;
 }
+@media(max-width:768px){
+  width: 320px;
+  height: 170px;
+}
 img {
   width: 14px;
   height: 14px;
