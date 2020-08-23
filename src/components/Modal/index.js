@@ -48,7 +48,11 @@ const Modal = ({ onClose = () => { }, children }) => {
               :
               children.name}
             </h1>
-            <span>{children.job_role}</span>
+            <span>{children.job_role.length > 30 ?
+              children.job_role.substring(0, 30, -3) + '...'
+              :
+              children.job_role}
+            </span>
             <h2>Idade</h2>
             <span>{calc} anos</span>
             <h2>Tempo de empresa</h2>

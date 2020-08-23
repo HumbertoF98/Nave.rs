@@ -75,7 +75,11 @@ export default function Home({ children }) {
               nav.name.substring(0, 20, -3) + '...'
               :
               nav.name}</h3>
-            <h4>{nav.job_role}</h4>
+            <h4>{nav.job_role.length > 20 ?
+              nav.job_role.substring(0, 20, -3) + '...'
+              :
+              nav.job_role}
+            </h4>
             <ViewTrashAndPencil>
               <img src={Trash} alt="ImageNaver" onClick={() => seeModalDelete(nav.id)} />
               {modalDelete ? <ModalDeleteNaver onClose={() => setModalDelete(false)}>
