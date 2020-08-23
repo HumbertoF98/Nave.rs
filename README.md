@@ -29,17 +29,17 @@ de encontrar possíveis colaboradores da empresa.
 
 ## 👨‍💻 Tecnologias Utilizadas
 
-- <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>
+- <a href="https://reactjs.org/" target="_blank" rel="noopener">ReactJs</a>
 
 ## ⁉ Primeiros passos
 
 ### 🤔 Pré-requisitos
 
-Para conseguir utilizar o projeto e contribuir nele, basta seguir as instruções abaixo:
+Para utilizar e/ou visualizar o projeto, basta seguir as instruções abaixo:
 
-- O **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>** é **OBRIGATÓRIO** para executar esse projeto e é **RECOMENDADO** usar a versão LTS.
-- O **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** ou **<a href="https://yarnpkg.com/" target="_blank" rel="noopener">Yarn</a>** são **OBRIGATÓRIO** para o gerenciamento dos pacotes da aplicação.
-- O **<a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>** é **OBRIGATÓRIO** para o controle de versão do projeto.
+- Que você tenha instalado o **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>** 
+- Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** ou **<a href="https://yarnpkg.com/" target="_blank" 
+
 
 ### 📝 Passo a passo
 
@@ -49,7 +49,7 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
 
 ```sh
   # Clone o repositório
-  $ git clone https://github.com/dom-pixel/comarca.git
+  $ git clone https://github.com/HumbertoF98/Nave.rs.git
   # Entre na pasta raiz da aplicação
   $ cd comarca
 ```
