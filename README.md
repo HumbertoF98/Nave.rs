@@ -42,9 +42,4 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
   # Inicie a aplicação web
   $ npm start # ou yarn start (caso tenha instalado)
 ```
-
-## 📚 Dificuldades
-
-
-
 ---
