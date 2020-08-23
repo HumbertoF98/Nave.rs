@@ -1,9 +1,9 @@
 # Desafio Nave.rs
 
 <h1 align="center">
-    <img alt="Nave.rs" src="assets/nave.svg" height="100px" />
+    <img alt="Nave.rs" src="src/assets/nave.svg" height="100px" />
     <br/>
-   <a href="https://preview.adonisjs.com/guides/quick-start" target="_blank" rel="noopener">AdonisJs</a> | <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
+   <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">ReactJS</a> 
 </h1>
 
 <p align="center">
