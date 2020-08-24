@@ -8,7 +8,7 @@
 
 ## Sobre o projeto
 
-O projeto "Nave.rs", é um desafio formulado pela equipe da Nave.rs com o intuito
+O projeto Navedex, é um desafio formulado pela equipe da Nave.rs com o intuito
 de encontrar possíveis colaboradores da empresa.
 
 ## Tecnologias Utilizadas
@@ -19,9 +19,8 @@ de encontrar possíveis colaboradores da empresa.
 
 Para utilizar e/ou visualizar o projeto, basta seguir as instruções abaixo:
 
-- Que você tenha instalado o **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>** 
-- Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>** 
-
+- Que você tenha instalado o **<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>**
+- Que você tenha instalado o **<a href="https://www.npmjs.com/" target="_blank" rel="noopener">NPM</a>**
 
 ### Passos para utilizar
 
@@ -46,8 +45,7 @@ Primeiro clone o repositório em seu computador, por meio do terminal utilizando
 ## 📚 Dificuldades
 
 Durante a execução da atividade proposta, algumas dificuldades e/ou empecilhos surgiram:
-- No layout previsto, pedia-se a idade de um Naver em sua criação, porém a aplicação back-end esperava a data de nascimento do usuário (birthdate), o mesmo acontecia para o tempo de empresa, o back-end esperava a data de admissão (admission_date). Diante destas dificuldades, na criação de um Naver está sendo pedido a data de nascimento e a data de admissão na empresa. Com essas datas é possível fazer o cálculo da idade do Naver e do tempo em que o mesmo está na empresa utilizando a biblioteca Moment (https://momentjs.com/). 
 
-
+- No layout previsto, pedia-se a idade de um Naver em sua criação, porém a aplicação back-end esperava a data de nascimento do usuário (birthdate), o mesmo acontecia para o tempo de empresa, o back-end esperava a data de admissão (admission_date). Diante destas dificuldades, na criação de um Naver está sendo pedido a data de nascimento e a data de admissão na empresa. Com essas datas é possível fazer o cálculo da idade do Naver e do tempo em que o mesmo está na empresa utilizando a biblioteca Moment (https://momentjs.com/).
 
 ---
